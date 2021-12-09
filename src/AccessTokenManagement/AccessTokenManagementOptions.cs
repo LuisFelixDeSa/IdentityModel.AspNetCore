@@ -11,11 +11,11 @@ namespace IdentityModel.AspNetCore.AccessTokenManagement
         /// <summary>
         /// Options for user access tokens
         /// </summary>
-        public UserAccessTokenManagementOptions User { get; set; } = new();
-        
+        public UserAccessTokenManagementOptions User { get; internal set; } = new();
+
         /// <summary>
         /// Options for client acccess tokens
         /// </summary>
-        public ClientAccessTokenManagementOptions Client { get; set; } = new();
+        public ClientAccessTokenManagementOptions Client { get; internal set; } = new();
     }
 }
